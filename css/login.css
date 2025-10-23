@@ -1,0 +1,60 @@
+main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+}
+
+.login{
+    width: 400px;
+    padding: 30px;
+    border-radius: 50px;
+    border: 1px solid #202020;
+    margin: 20px;
+}
+
+.login div{
+    margin-bottom: 15px;
+}
+
+h3{
+    text-align: center;
+}
+
+main button{
+    width: 100%;
+}
+
+main a{
+    font-size: small;
+    color: #198754;
+    font-style: italic;
+    width: 100%;
+    text-align: right;
+}
+.entrarCom{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.entrarCom img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #703838;
+    margin-bottom: 30px;
+    border: 1px solid #cccccc;
+}
+
+@media screen and (max-width: 560px){
+    .login{
+        border: 0;
+        margin: 10px;
+        padding: 0;
+        width: calc(100% - 20px);
+    }
+    main .container{
+        display: block;
+    }
+}
+

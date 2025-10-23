@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Kodchasan:wght@400;700&family=Lexend:wght@100..900&family=Manjari:wght@100;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Config Site */
+body{
+    margin: 0px;
+    font-family: Host Grotesk;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+button{
+    background-color: #202020;
+    color: white;
+    font-family: Host Grotesk;
+    padding: 15px;
+    border-radius: 20px;
+    border: 0;
+}
+button:hover{
+    background-color: #198754;
+    transition: 0.3s;
+}
+
+input{
+    margin: 0;
+    border-radius: 20px;
+    border: 0px;
+    padding: 15px;
+    font-family: Host Grotesk;
+    width: calc(100% - 30px);
+    background-color: rgb(228, 228, 228);
+}
+
+/* Config Header */
+header{
+    background-color: #202020;
+    height: 70px;
+    padding: 20px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 70px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin: 0px;
+}
+.icon_header svg{
+    margin-left: 20px;
+}
+.iconMenu{
+    width: 40px;
+    height: 40px;
+    color: rgb(148, 148, 148);
+    margin: 0px;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px auto;
+}
+
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+hr{
+    border: 0.5px solid #c2c2c2;
+}
+
+/* Menu Hambúrguer */
+.btnMenu button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.btnMenu button:hover {
+    background-color: #414141;
+}
+
+.menu .closeMenu {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.menu .closeMenu:hover {
+  background-color: #198754;
+}
+
+
+.linha{
+    background-color: #414141;
+    height: 3px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.inputBtn{
+    margin: 20px 0px;
+}
+.inputBtn input{
+    margin: 0;
+    border-radius: 20px 0 0 20px;
+    border: 0px;
+    padding: 15px;
+    font-family: Host Grotesk;
+    width: 170px;
+}
+.inputBtn button{
+    color: white;
+    background-color: #198754;
+    margin: 0;
+    border-radius: 0 20px 20px 0;
+    border: 0px;
+    padding: 15px;
+    font-family: Host Grotesk;
+    transition: 0.3s;
+    width: 100px;
+}
+.inputBtn button:hover{
+    background-color: #43ac7b;
+    transition: 0.3s;
+}
+
+.iconesHamburguer svg{
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin-right: 15px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -360px; /* escondido inicialmente */
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0.97);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 30px;
+    transition: left 0.3s ease;
+    z-index: 1001;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    display: flex;
+    align-items: center
+}
+
+/* ======== FUNDO ESCURECIDO ======== */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+/* ======== QUANDO O MENU ESTÁ ATIVO ======== */
+.menu.active {
+    left: 0;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Config Main */
+main{
+    margin: 20px;
+}
+
+
+/* Config Footer */
+footer{
+    background-color: #202020;
+    color: white;
+    padding: 30px 0px;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container div{
+    margin: 30px;
+}
+
+.linksFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.linksFooter a{
+    color: white;
+    text-decoration: none;
+}
+
+.contatoFooter a{
+    text-decoration: none;
+}
+
+.logoFooter{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 560px){
+    footer .container {
+        flex-direction: column;
+    }
+
+    .icon_header svg{
+        display: none;
+    }
+
+    .btnMenu button {
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+}

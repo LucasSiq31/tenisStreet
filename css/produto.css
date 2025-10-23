@@ -1,0 +1,89 @@
+#dolar{
+    color: gray;
+    text-decoration: line-through;
+}
+#real{
+    font-size: x-large;
+}
+
+main .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main img{
+    width: 50%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.info{
+    width: 50%;
+}
+
+#tamanhos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tamanhos div{
+    margin: 0px;
+    min-width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    
+}
+
+.frete{
+    margin: 10px 0px;
+}
+.frete input{
+    margin: 0;
+    border-radius: 20px 0 0 20px;
+    border: 0px;
+    padding: 15px;
+    font-family: Host Grotesk;
+    width: calc(100% - 135px);
+    background-color: rgb(228, 228, 228);
+}
+.frete button{
+    color: white;
+    background-color: #198754;
+    margin: 0;
+    border-radius: 0 20px 20px 0;
+    border: 0px;
+    padding: 15px;
+    font-family: Host Grotesk;
+    transition: 0.3s;
+    width: 100px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between
+}
+.botoes button{
+    width: calc(50% - 10px);
+}
+
+#valor{
+    color: #198754;
+    text-decoration: underline;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: small;
+}
+
+@media screen and (max-width: 800px){
+    main img, .info{
+        width: 100%;
+    }
+
+}

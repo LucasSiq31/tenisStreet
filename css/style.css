@@ -1,0 +1,211 @@
+/* Configurações Site */
+body{
+    font-size: large;
+}
+/* Cabeçalho e menu do site */
+header{
+    background-color: rgb(32, 32, 32);
+    height: 90px;
+}
+
+.cabecalho{
+    height: 90px;
+}
+
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    color: white;
+    width: 45px;
+    height: 45px;
+    margin: 22.5px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    text-align :center
+}
+nav{
+    margin-bottom: 10px;
+}
+
+/* Corpo do Site */
+.titulo{
+    font-size: x-large;
+    font-weight: bold
+}
+/* Card de Produtos */
+.card{
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-bottom: 15px;
+    justify-content: space-evenly;
+    width: 15rem;
+}
+.floatCard{
+    float: left;
+    margin: 5px;
+}
+.row{
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+}
+.botao{
+    align-items: flex-end;
+}
+
+.comprar{
+    width: 100%;
+    background-color: black;
+    border: black;
+}
+.comprar:hover{
+    background-color: #198754;
+    border: 0px;
+}
+.comprar:active{
+    background-color: white;
+    color: #198754;
+    border: 1px solid #198754;
+}
+.fotoTenis{
+    border-radius: 10px;
+}
+.fotoTenis:hover{
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.cardDestaque .tituloDestaque{
+    flex-direction: row;
+    font-size: x-large;
+}
+
+/* Tela Compra */
+.produto{
+    width: 100%;
+}
+.caixaTexto{
+    background: rgb(163, 163, 163);
+    border: white;
+    border-radius: 5px;
+    height: 50px;
+    margin: 5px;
+}
+#valor{
+    font-size: small;
+    font-style: italic;
+    color: red;
+}
+.telaCompra{
+    margin-bottom: 60px;
+}
+
+/* Tela frete */
+.enviar{
+    height: 50px;
+    border-radius: 10px;
+    width: 500px;
+}
+.forms{
+    margin-bottom: 20px;
+}
+.tabelaFrete{
+    width: 100% ;
+    margin-bottom: 50px;
+}
+.colTabela{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* Rodapé do site */
+footer{
+    background-color: rgb(32, 32, 32);
+    padding: 40px;
+    margin-top: 50px;
+}
+.itemRodape{
+    text-decoration: none;
+    color: white;
+    text-align :center;
+    margin: 10px;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+/*Media Query*/
+@media screen and (min-width: 800px) {
+    .navbar {
+        display: none;
+    }
+    .tenisCelular{
+        display: none;
+    }
+    .sumirComputador{
+        display: none;
+    }
+}
+@media screen and (max-width: 799px){
+    .sumir{
+        display: none;
+    }
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+    .itemRodape{
+        font-size: medium;
+    }
+    nav{
+        margin-bottom: 110px;
+    }
+    .card{
+        width: 8em;
+        font-size: small;
+    }
+    .fotoTenis{
+        border-radius: 5px;
+        width: 200px;
+    }
+    .forms{
+        width: 100%;
+    }
+    .enviar{
+        height: 40px;
+        width: 100%;
+    }
+    body{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .forms{
+        width: 70%;
+    }
+    .enviar{
+        width: 70%;
+    }
+    .frete label{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1199px){
+    .sumirTabela1{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px){
+    .sumirTabela2{
+        display: none;
+    }
+}
