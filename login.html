@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Tênis Street</title>
+
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="Imagens/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div>
+                <!-- Menu Hamburguer Btn -->
+                <div class="btnMenu">
+                    <button>
+                        <svg class=iconMenu xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Logo Site -->
+                <div class="logo"><img class="logo" src="Imagens/Logo Vetor Branco.png" alt=""></div>
+            </div>
+            
+            <!-- Logo Perfil e Carrinho-->
+            <div class="icon_header">
+                <a href="index.html">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="menu">  
+            <div class="btnMenu">
+                <button class="closeMenu">&times;</button>
+                <h1>Menu</h1>
+            </div>
+            <div class="linha"></div>
+
+            <a href="index.html" class="ativo">Início</a>
+            <a href="#">Promoções</a>
+            <a href="frete.html">Frete</a>
+            <a href="#">Contato</a>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="login">
+                <h1>Login</h2>
+                <hr>
+
+                <div>
+                    <label for="">E-mail:</label>
+                    <input type="text" placeholder="exemplo@email.com" class="input">
+                </div>
+
+                <div>
+                    <label for="">Senha:</label>
+                    <input type="password" placeholder="Senha" class="input">
+                </div>
+
+                <h3>Fazer login com:</h2>
+
+                <div class="entrarCom">
+                    <img src="Imagens/Apps/google.png" alt="">
+                    <img src="Imagens/Apps/face.png" alt="">
+                    <img src="Imagens/Apps/apple.png" alt="">
+                </div>
+
+                <button>Entrar</button>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+        </div>
+    </main>
+    <script src="script/menuHamb.js"></script>
+</body>
+</html>
