@@ -14,6 +14,16 @@
 
 ##
 
+<b>Atualizações: </b>
+
+- 🧠 Nova interface; 
+- 👟 Mais produtos disponíveis; 
+- 🌆 Novos Banners; 
+- 🛒 Tela do Produto funcionda para todos os Produtos;
+- 🆔 Identidade Visual Própia;
+  
+##
+
 Acesso à aplicação: https://lucassiq31.github.io/tenisStreet/
 
 ##
