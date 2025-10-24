@@ -50,3 +50,15 @@ tbody tr> :last-child{
 h1{
     margin-top: 0;
 }
+.t2{
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+    .sumir {
+        display: none;
+    }
+    .t2{
+        display: block;
+    }
+}
