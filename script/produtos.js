@@ -142,7 +142,7 @@ const produtos = [
     },
     {
         id: 15,
-        nome: "Qix and Kings Combat Suede Heart Pack Preto",
+        nome: "Qix Combat Suede Heart Pack Preto",
         imagem: "Imagens/Produtos/15.png",
         precoDolar: 78,
         marca: "Qix",
@@ -261,5 +261,6 @@ const produtos = [
         tamanhos: ["PP", "P", "M", "G", "GG", "EGG"],
     }
 ];
+
 
 window.produtos = produtos;
